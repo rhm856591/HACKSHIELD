@@ -25,3 +25,7 @@ form.addEventListener('submit', (e) => {
     resultsDiv.innerHTML = '<p>There was an error checking the message for spam. Please try again later.</p>';
   });
 });
+
+document.getElementById("myButton").onclick = function() {
+  alert("Button clicked!");
+};

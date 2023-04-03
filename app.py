@@ -32,7 +32,7 @@ def check():
 
     # Display the result
     if is_spam == 1:
-            result = "This messagße is spam."
+            result = "This message is spam."
     else:
             result = "This message is not spam."
 
