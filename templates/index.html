@@ -13,7 +13,7 @@
     <main>
       <section>
         <h2>Check if your message has been reported for spam</h2>
-        <form action="/check" method="post">
+        <form method="POST" action="/check">
           <textarea name="message" placeholder="Enter your message" required></textarea>
           <button type="submit">Check</button>
         </form>
@@ -22,6 +22,9 @@
         <h2>Results</h2>
         <div id="results">
           <!-- Results will be displayed here -->
+          {% if result %}
+        <p>{{ result }}</p>
+        {% endif %}
         </div>
       </section>
       <section>
