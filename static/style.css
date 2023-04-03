@@ -1,0 +1,226 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.about{
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004368;
+}
+
+#results {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+}
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for form label */
+label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for form input and textarea */
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Style for form button */
+button[type="submit"] {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #004368;
+}
+
+/* Style for results section */
+#results {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Style for about section */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Style for footer */
+footer {
+    background-color: #0077B6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    header {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    input[type="email"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* For screens between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+    header {
+        font-size: 30px;
+    }
+
+    main {
+        max-width: 80%;
+        padding: 20px;
+    }
+}
+
+/* For screens larger than 900px */
+@media (min-width: 900px) {
+    header {
+        font-size: 36px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    input[type="email"] {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
