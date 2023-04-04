@@ -14,7 +14,11 @@ app = Flask(__name__)
 # Define the home page route
 @app.route('/')
 def home():
-    return render_template('index.html', result='')
+    return render_template('sms.html', result='')
+
+@app.route('/sms')
+def sms():
+    return render_template('sms.html', result='')
 
 # Define the route for checking if a message is spam or not
 @app.route('/check', methods=['POST'])
@@ -36,7 +40,7 @@ def check():
     else:
             result = "This message is not spam."
 
-    return render_template('index.html', result=result)
+    return render_template('sms.html', result=result)
 
 # Run the app
 if __name__ == '__main__':
